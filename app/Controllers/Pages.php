@@ -21,10 +21,31 @@ class Pages extends BaseController
     ]);
     }
 
-    public function detail($id)
+    public function detail()
     {
-        $superhero = $this->superheroModel->where(['id' => $id]) ->first();
+        // $superhero = $this->superheroModel->where(['id' => $id]) ->first();
         // echo $id;
-        return view('pages/detail', $superhero);
+        return view('pages/detail');
+    }
+
+    public function skill()
+    {
+        // $superhero = $this->superheroModel->where(['id' => $id]) ->first();
+        // echo $id;
+        return view('pages/skill');
+    }
+
+    public function simulasi()
+    {
+        // $superhero = $this->superheroModel->where(['id' => $id]) ->first();
+        // echo $id;
+        return view('pages/simulasi');
+    }
+
+    public function detailskill()
+    {
+        // $superhero = $this->superheroModel->where(['id' => $id]) ->first();
+        // echo $id;
+        return view('pages/detailskill');
     }
 }
