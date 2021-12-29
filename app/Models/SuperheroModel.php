@@ -10,12 +10,11 @@ class SuperheroModel extends Model
     protected $primaryKey = 'id';
     protected $useTimestamps =true;
 
-    //  public function getSuperhero($id = false)
-    // {
-    //     if ($id == false) {
-    //         return $this->findAll();
-    //     }
+    public function getSuperhero($id = false)
+    {
+    if ($id == false) {
+             return $this->findAll();
+         }
 
-    //     (return $this->where(['id' => $id]->first);
-    // }
+     }
 }

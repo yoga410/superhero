@@ -23,9 +23,10 @@ class Pages extends BaseController
 
     public function detail()
     {
-        // $superhero = $this->superheroModel->where(['id' => $id]) ->first();
-        // echo $id;
-        return view('pages/detail');
+       $superheroModel = new SuperheroModel();
+       $data['superhero'] = $superheroModel->getSuperhero();
+        return view('pages/detail', $data);
+        dd();
     }
 
     public function skill()
